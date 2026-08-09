@@ -4,11 +4,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Abhishek Sharma — Distributed Systems Engineer</title>
-<meta name="description" content="Staff Software Engineer with fifteen years building distributed systems for commerce, pricing, payments, and fulfillment at scale. QXO, TikTok, Costco, Wayfair, Nagarro.">
+<meta name="description" content="Staff Software Engineer and IEEE Senior Member with 15 years building distributed systems. 2 US Patents. Published researcher in fraud detection and payment architecture. QXO, TikTok, Costco, Wayfair, Nagarro.">
 <meta name="author" content="Abhishek Sharma">
 
 <meta property="og:title" content="Abhishek Sharma — Distributed Systems Engineer">
-<meta property="og:description" content="Staff Software Engineer. Fifteen years designing distributed systems that fail gracefully — commerce, pricing, payments, fulfillment.">
+<meta property="og:description" content="Staff Software Engineer and IEEE Senior Member. Fifteen years designing distributed systems that fail gracefully — commerce, payments, fraud detection, energy optimization.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://abhisharma.co.in">
 
@@ -461,6 +461,7 @@
       <a href="#writing">Writing</a>
       <a href="#opensource">Open Source</a>
       <a href="#experience">Experience</a>
+      <a href="#publications">Publications</a>
       <a href="#contact">Contact</a>
     </div>
     <a href="mailto:abhicse24@gmail.com" class="nav-cta">Get in touch ↗</a>
@@ -475,10 +476,11 @@
     </h1>
 
     <p class="lede">
-      I'm <strong>Abhishek Sharma</strong>, a Staff Software Engineer with fifteen years
-      building commerce, pricing, payments, and fulfillment systems at scale&nbsp;— most
-      recently at <strong>QXO</strong>, previously at <strong>TikTok, Costco, Wayfair,
-      and Nagarro</strong>.
+      I'm <strong>Abhishek Sharma</strong>, a Staff Software Engineer and <strong>IEEE Senior
+      Member</strong> with fifteen years building distributed systems for commerce, payments,
+      fraud detection, and energy optimization at scale&nbsp;— most recently at
+      <strong>QXO (NYSE: QXO)</strong>, previously at <strong>TikTok/ByteDance, Costco,
+      Wayfair, and Nagarro</strong>.
     </p>
 
     <div class="cta-row">
@@ -496,18 +498,18 @@
     </div>
     <div class="cred">
       <div class="cred-label">Daily users served</div>
-      <div class="cred-value">500M+</div>
-      <div class="cred-foot">Largest production system</div>
+      <div class="cred-value">1B+</div>
+      <div class="cred-foot">Largest platform scale</div>
     </div>
     <div class="cred">
-      <div class="cred-label">Throughput</div>
-      <div class="cred-value">20K TPM</div>
-      <div class="cred-foot">Order-pipeline scale</div>
+      <div class="cred-label">Revenue systems</div>
+      <div class="cred-value">$18B+</div>
+      <div class="cred-foot">Payment infrastructure scale</div>
     </div>
     <div class="cred">
-      <div class="cred-label">SKU catalog</div>
-      <div class="cred-value">14M</div>
-      <div class="cred-foot">Pricing engine breadth</div>
+      <div class="cred-label">US Patents</div>
+      <div class="cred-value">2</div>
+      <div class="cred-foot">USPTO patents granted</div>
     </div>
   </section>
 
@@ -522,23 +524,112 @@
       <a href="https://medium.com/@abhicse24" class="see-all">View all on Medium →</a>
     </div>
 
-    <a href="#" data-replace="medium-url" class="article-card">
-      <div>
-        <div class="meta-row">
-          <span class="pill">Featured</span>
-          <span class="pill pub">Medium · Essay · 2026</span>
-          <span class="pill pub">3,400 words</span>
+    <div class="roles-grid" style="grid-template-columns: 1fr;">
+
+      <a href="https://medium.com/@abhicse24/design-for-failure-d59b06cd1346" class="article-card">
+        <div>
+          <div class="meta-row">
+            <span class="pill">Featured</span>
+            <span class="pill pub">Medium · Essay · May 2026</span>
+            <span class="pill pub">3,400 words</span>
+          </div>
+          <h3>Design for Failure</h3>
+          <p>Five lessons from fifteen years of building distributed systems — anchored in real production incidents from Cloudflare, Knight Capital, AWS DynamoDB, GitLab, and GitHub.</p>
+          <span class="read-link">Read the essay →</span>
         </div>
-        <h3>Design for Failure</h3>
-        <p>Five lessons from fifteen years of building distributed systems — anchored in real production incidents from Cloudflare, Knight Capital, AWS DynamoDB, GitLab, and GitHub.</p>
-        <span class="read-link">Read the essay →</span>
-      </div>
-      <div class="article-visual" aria-hidden="true"></div>
-    </a>
+        <div class="article-visual" aria-hidden="true"></div>
+      </a>
+
+      <a href="https://medium.com/@abhicse24/surviving-retries-idempotency-and-the-myth-of-exactly-once-d8dce77b4b92" class="article-card">
+        <div>
+          <div class="meta-row">
+            <span class="pill pub">Medium · Essay · Aug 2026</span>
+          </div>
+          <h3>Surviving Retries: Idempotency and the Myth of Exactly-Once</h3>
+          <p>Networks drop packets, clients retry, brokers redeliver. Exactly-once <em>delivery</em> mostly does not exist — exactly-once <em>effect</em> is what you actually design for.</p>
+          <span class="read-link">Read the essay →</span>
+        </div>
+        <div class="tag-row">
+          <span class="tag">Idempotency</span>
+          <span class="tag">Retries</span>
+          <span class="tag">Message delivery</span>
+          <span class="tag">Distributed systems</span>
+        </div>
+      </a>
+
+      <a href="https://medium.com/@abhicse24/the-saga-pattern-distributed-transactions-without-a-distributed-lock-801538515f5c" class="article-card">
+        <div>
+          <div class="meta-row">
+            <span class="pill pub">Medium · Essay · Jul 2026</span>
+          </div>
+          <h3>The SAGA Pattern: Distributed Transactions Without a Distributed Lock</h3>
+          <p>You cannot wrap a BEGIN…COMMIT around five microservices. Sagas trade atomicity for a sequence of local transactions and compensations.</p>
+          <span class="read-link">Read the essay →</span>
+        </div>
+        <div class="tag-row">
+          <span class="tag">Sagas</span>
+          <span class="tag">Compensation</span>
+          <span class="tag">Microservices</span>
+          <span class="tag">Consistency</span>
+        </div>
+      </a>
+
+      <a href="https://medium.com/@abhicse24/an-llm-is-not-a-rest-endpoint-zero-trust-for-ai-ca74f1eb2669" class="article-card">
+        <div>
+          <div class="meta-row">
+            <span class="pill pub">Medium · Essay · Jul 2026</span>
+          </div>
+          <h3>An LLM Is Not a REST Endpoint: Zero-Trust for AI</h3>
+          <p>Treating a model as a stateless black box is an architectural hazard. The AI Gateway pattern puts a zero-trust boundary between your application and the model.</p>
+          <span class="read-link">Read the essay →</span>
+        </div>
+        <div class="tag-row">
+          <span class="tag">Zero trust</span>
+          <span class="tag">AI gateway</span>
+          <span class="tag">LLM integration</span>
+          <span class="tag">Security</span>
+        </div>
+      </a>
+
+      <a href="https://medium.com/@abhicse24/how-fintechs-keep-money-truthful-event-driven-ledgers-99d10e52a1f0" class="article-card">
+        <div>
+          <div class="meta-row">
+            <span class="pill pub">Medium · Essay · Jul 2026</span>
+          </div>
+          <h3>How Fintechs Keep Money Truthful: Event-Driven Ledgers</h3>
+          <p>The most dangerous bug in a payments system is not a failed transaction. It is a successful response from a system that no longer knows the truth.</p>
+          <span class="read-link">Read the essay →</span>
+        </div>
+        <div class="tag-row">
+          <span class="tag">Ledgers</span>
+          <span class="tag">Event sourcing</span>
+          <span class="tag">Payments</span>
+          <span class="tag">Reconciliation</span>
+        </div>
+      </a>
+
+      <a href="https://medium.com/@abhicse24/the-design-patterns-behind-production-ai-agents-7615e31af30b" class="article-card">
+        <div>
+          <div class="meta-row">
+            <span class="pill pub">Medium · Essay · Jul 2026</span>
+          </div>
+          <h3>The Design Patterns Behind Production AI Agents</h3>
+          <p>The five patterns behind production AI agents — ReAct, Reflection, Planning, Orchestrator-Worker, and Multi-Agent — and when each one earns its complexity.</p>
+          <span class="read-link">Read the essay →</span>
+        </div>
+        <div class="tag-row">
+          <span class="tag">AI agents</span>
+          <span class="tag">ReAct</span>
+          <span class="tag">Orchestration</span>
+          <span class="tag">Architecture</span>
+        </div>
+      </a>
+
+    </div>
 
     <div class="more-writing">
       <span class="dot-mono"></span>
-      More essays in progress&nbsp;— idempotency at scale, business-invariant monitoring, organizational debt in distributed systems.
+      Peer-reviewed research and industry articles published across IEEE, Zenodo, and Medium.
     </div>
   </section>
 
@@ -551,37 +642,108 @@
       </div>
     </div>
 
-    <div class="project-card">
-      <div>
-        <div class="project-status"><span class="status-dot"></span>In development</div>
-        <h3><a href="#" data-replace="affiliateforge-url">AffiliateForge</a></h3>
-        <p>A production-grade open-source framework for affiliate attribution, event deduplication, fraud detection, and payout orchestration — distilled from patterns built across reward and commerce systems at scale.</p>
-        <div class="tag-row">
-          <span class="tag">Attribution</span>
-          <span class="tag">Idempotency</span>
-          <span class="tag">Fraud detection</span>
-          <span class="tag">Event sourcing</span>
-          <span class="tag">Python</span>
+    <div class="roles-grid" style="grid-template-columns: 1fr;">
+
+      <div class="project-card">
+        <div>
+          <div class="project-status"><span class="status-dot"></span>Public repository</div>
+          <h3><a href="https://github.com/abhisheksharma2411/STREAM-BSG">STREAM-BSG</a></h3>
+          <p>Open-source implementation of a streaming graph architecture for real-time fraud detection in B2B payment networks. Includes the 49-feature extractor, synthetic data generator, baseline comparisons (Logistic Regression, XGBoost, GraphSAGE), and full reproduction scripts.</p>
+          <div class="tag-row">
+            <span class="tag">Fraud detection</span>
+            <span class="tag">Graph ML</span>
+            <span class="tag">Streaming systems</span>
+            <span class="tag">Python</span>
+          </div>
+        </div>
+        <div class="project-visual" aria-hidden="true">
+          <!-- Decorative streaming-graph glyph -->
+          <svg viewBox="0 0 200 160" xmlns="http://www.w3.org/2000/svg" fill="none">
+            <g stroke="rgba(255,255,255,0.4)" stroke-width="1">
+              <line x1="30" y1="80" x2="80" y2="40"/>
+              <line x1="30" y1="80" x2="80" y2="120"/>
+              <line x1="80" y1="40" x2="130" y2="60"/>
+              <line x1="80" y1="120" x2="130" y2="60"/>
+              <line x1="80" y1="120" x2="130" y2="115"/>
+              <line x1="130" y1="60" x2="172" y2="88"/>
+              <line x1="130" y1="115" x2="172" y2="88"/>
+            </g>
+            <g stroke="rgba(255,255,255,0.22)" stroke-width="1" stroke-dasharray="3 5">
+              <line x1="16" y1="20" x2="184" y2="20"/>
+              <line x1="16" y1="142" x2="184" y2="142"/>
+            </g>
+            <circle cx="30"  cy="80"  r="6" fill="white"/>
+            <circle cx="80"  cy="40"  r="6" fill="white"/>
+            <circle cx="80"  cy="120" r="6" fill="white"/>
+            <circle cx="130" cy="115" r="6" fill="white"/>
+            <circle cx="172" cy="88"  r="6" fill="white"/>
+            <circle cx="130" cy="60"  r="9" fill="#ff6a3d"/>
+          </svg>
         </div>
       </div>
-      <div class="project-visual" aria-hidden="true">
-        <!-- Decorative network glyph -->
-        <svg viewBox="0 0 200 160" xmlns="http://www.w3.org/2000/svg" fill="none">
-          <g stroke="rgba(255,255,255,0.45)" stroke-width="1">
-            <line x1="40" y1="30" x2="100" y2="80"/>
-            <line x1="160" y1="30" x2="100" y2="80"/>
-            <line x1="40" y1="130" x2="100" y2="80"/>
-            <line x1="160" y1="130" x2="100" y2="80"/>
-            <line x1="40" y1="30" x2="40" y2="130"/>
-            <line x1="160" y1="30" x2="160" y2="130"/>
-          </g>
-          <circle cx="40"  cy="30"  r="6" fill="white"/>
-          <circle cx="160" cy="30"  r="6" fill="white"/>
-          <circle cx="40"  cy="130" r="6" fill="white"/>
-          <circle cx="160" cy="130" r="6" fill="white"/>
-          <circle cx="100" cy="80"  r="9" fill="#ff6a3d"/>
-        </svg>
+
+      <div class="project-card">
+        <div>
+          <div class="project-status"><span class="status-dot"></span>Public dataset · CC BY 4.0</div>
+          <h3><a href="https://doi.org/10.5281/zenodo.21668281">SynB2B-Fraud Dataset</a></h3>
+          <p>A fully synthetic B2B payment fraud dataset — 100,000 transactions, five fraud topologies, seed-deterministic generation. The first publicly available benchmark for B2B fraud detection research.</p>
+          <div class="tag-row">
+            <span class="tag">Dataset</span>
+            <span class="tag">B2B payments</span>
+            <span class="tag">Fraud detection</span>
+            <span class="tag">CC BY 4.0</span>
+          </div>
+        </div>
+        <div class="project-visual" aria-hidden="true">
+          <!-- Decorative dataset glyph -->
+          <svg viewBox="0 0 200 160" xmlns="http://www.w3.org/2000/svg" fill="none">
+            <g stroke="rgba(255,255,255,0.4)" stroke-width="1">
+              <rect x="34" y="34" width="132" height="92" rx="6"/>
+              <line x1="34" y1="60" x2="166" y2="60"/>
+              <line x1="34" y1="83" x2="166" y2="83"/>
+              <line x1="34" y1="103" x2="166" y2="103"/>
+              <line x1="78" y1="34" x2="78" y2="126"/>
+              <line x1="122" y1="34" x2="122" y2="126"/>
+            </g>
+            <rect x="34" y="34" width="44" height="26" rx="6" fill="rgba(255,255,255,0.28)"/>
+            <rect x="122" y="83" width="44" height="20" fill="#ff6a3d" opacity="0.85"/>
+          </svg>
+        </div>
       </div>
+
+      <div class="project-card">
+        <div>
+          <div class="project-status"><span class="status-dot"></span>In development</div>
+          <h3><a href="#" data-replace="affiliateforge-url">AffiliateForge</a></h3>
+          <p>A production-grade open-source framework for affiliate attribution, event deduplication, fraud detection, and payout orchestration — distilled from patterns built across reward and commerce systems at scale.</p>
+          <div class="tag-row">
+            <span class="tag">Attribution</span>
+            <span class="tag">Idempotency</span>
+            <span class="tag">Fraud detection</span>
+            <span class="tag">Event sourcing</span>
+            <span class="tag">Python</span>
+          </div>
+        </div>
+        <div class="project-visual" aria-hidden="true">
+          <!-- Decorative network glyph -->
+          <svg viewBox="0 0 200 160" xmlns="http://www.w3.org/2000/svg" fill="none">
+            <g stroke="rgba(255,255,255,0.45)" stroke-width="1">
+              <line x1="40" y1="30" x2="100" y2="80"/>
+              <line x1="160" y1="30" x2="100" y2="80"/>
+              <line x1="40" y1="130" x2="100" y2="80"/>
+              <line x1="160" y1="130" x2="100" y2="80"/>
+              <line x1="40" y1="30" x2="40" y2="130"/>
+              <line x1="160" y1="30" x2="160" y2="130"/>
+            </g>
+            <circle cx="40"  cy="30"  r="6" fill="white"/>
+            <circle cx="160" cy="30"  r="6" fill="white"/>
+            <circle cx="40"  cy="130" r="6" fill="white"/>
+            <circle cx="160" cy="130" r="6" fill="white"/>
+            <circle cx="100" cy="80"  r="9" fill="#ff6a3d"/>
+          </svg>
+        </div>
+      </div>
+
     </div>
   </section>
 
@@ -600,14 +762,14 @@
         <div class="role-when">Present</div>
         <h3 class="role-company">QXO, Inc.</h3>
         <p class="role-title">Staff Software Engineer</p>
-        <p class="role-summary"><strong>Distributed systems for commerce, payments, and fulfillment</strong> at a publicly traded building-products technology company.</p>
+        <p class="role-summary">Architect of <strong>zero-tolerance B2B payment infrastructure</strong> for a NYSE-listed company projecting $18B+ annual revenue. Multi-provider payment processing, Oracle Fusion ERP integration, event-driven reconciliation, and fraud detection. Named MVP by CEO Brad Jacobs at monthly operating review.</p>
       </div>
 
       <div class="role-card">
         <div class="role-when">Prior</div>
         <h3 class="role-company">ByteDance · TikTok</h3>
         <p class="role-title">Senior Engineer</p>
-        <p class="role-summary">Backend for the Tasks &amp; Rewards platform serving <strong>500M+ daily active users</strong>; idempotent payout pipelines and high-throughput attribution.</p>
+        <p class="role-summary">Backend for the Creator Rewards platform distributing <strong>$2.1B+ to 4.7M creators</strong> globally across 1B+ monthly active users. Idempotent payout pipelines ensuring zero duplicate transactions at scale.</p>
       </div>
 
       <div class="role-card">
@@ -627,9 +789,78 @@
       <div class="role-card">
         <div class="role-when">Earlier</div>
         <h3 class="role-company">Nagarro · Avista Utilities</h3>
-        <p class="role-title">Engineering Lead</p>
-        <p class="role-summary">Co-developed the <strong>Avista Decision Support System (ADSS)</strong> — a patented real-time energy-optimization platform serving 770,000+ utility customers across four states.</p>
+        <p class="role-title">Senior Engineer</p>
+        <p class="role-summary">Designed and implemented core modules of the <strong>Avista Decision Support System (ADSS)</strong> — a patented real-time energy optimization platform powered by Gurobi, serving 815,000+ utility customers across four US states, saving $25M+ annually. Engineering contributions to 2 US patents. Platform selected for a U.S. DOE-funded study (2026–2028).</p>
       </div>
+
+    </div>
+  </section>
+
+  <!-- ===================== PUBLICATIONS ===================== -->
+  <section id="publications">
+    <div class="section-head">
+      <div>
+        <div class="section-eyebrow">§ 04</div>
+        <h2>Publications</h2>
+      </div>
+      <a href="https://scholar.google.com/citations?user=jAQjwnoAAAAJ" class="see-all">View on Google Scholar →</a>
+    </div>
+
+    <div class="roles-grid" style="grid-template-columns: 1fr;">
+
+      <a href="https://github.com/abhisheksharma2411/STREAM-BSG" class="article-card">
+        <div>
+          <div class="meta-row">
+            <span class="pill">Accepted</span>
+            <span class="pill pub">IEEE InC4 2026 · Paper ID 3092</span>
+            <span class="pill pub">To appear in IEEE Xplore</span>
+          </div>
+          <h3>STREAM-BSG: A Streaming Graph Architecture for Real-Time Fraud Detection in B2B Payment Networks</h3>
+          <p>A streaming bipartite-graph approach to detecting coordinated fraud in business-to-business payment networks, evaluated against Logistic Regression, XGBoost, and GraphSAGE baselines.</p>
+          <span class="read-link">View the implementation →</span>
+        </div>
+        <div class="tag-row">
+          <span class="tag">Peer-reviewed</span>
+          <span class="tag">Conference paper</span>
+          <span class="tag">Graph ML</span>
+          <span class="tag">Fraud detection</span>
+        </div>
+      </a>
+
+      <a href="https://doi.org/10.5281/zenodo.21670659" class="article-card">
+        <div>
+          <div class="meta-row">
+            <span class="pill pub">Zenodo · Preprint · 2026</span>
+            <span class="pill pub">DOI: 10.5281/zenodo.21670659</span>
+          </div>
+          <h3>SynB2B-Fraud: An Open Synthetic Benchmark for Fraud Detection in B2B Payment Networks</h3>
+          <p>The generation methodology, fraud topologies, and evaluation protocol behind an openly licensed benchmark for a domain with no public datasets.</p>
+          <span class="read-link">Read the preprint →</span>
+        </div>
+        <div class="tag-row">
+          <span class="tag">Preprint</span>
+          <span class="tag">Benchmark</span>
+          <span class="tag">B2B payments</span>
+          <span class="tag">Open access</span>
+        </div>
+      </a>
+
+      <a href="https://doi.org/10.5281/zenodo.21668281" class="article-card">
+        <div>
+          <div class="meta-row">
+            <span class="pill pub">Zenodo · Dataset · 2026</span>
+            <span class="pill pub">DOI: 10.5281/zenodo.21668281</span>
+          </div>
+          <h3>SynB2B-Fraud: A Synthetic Dataset for Fraud Detection in B2B Payment Networks</h3>
+          <p>100,000 synthetic B2B transactions across five fraud topologies, seed-deterministic and fully reproducible. Released under CC BY 4.0.</p>
+          <span class="read-link">View the dataset →</span>
+        </div>
+        <div class="tag-row">
+          <span class="tag">Dataset</span>
+          <span class="tag">100K transactions</span>
+          <span class="tag">CC BY 4.0</span>
+        </div>
+      </a>
 
     </div>
   </section>
@@ -638,12 +869,12 @@
   <section id="community">
     <div class="section-head">
       <div>
-        <div class="section-eyebrow">§ 04</div>
+        <div class="section-eyebrow">§ 05</div>
         <h2>Community &amp; service</h2>
       </div>
     </div>
 
-    <div class="community-grid">
+    <div class="roles-grid">
 
       <div class="community-card">
         <div class="icon" aria-hidden="true">
@@ -652,8 +883,14 @@
             <path d="m8 14-2 8 6-3 6 3-2-8"/>
           </svg>
         </div>
-        <h3>IEEE Membership</h3>
-        <p>Member, IEEE Computer Society. Senior Member application currently under review.</p>
+        <h3>Professional memberships</h3>
+        <p>
+          <strong>IEEE Senior Member</strong> (#102350728) — panel-reviewed, five professional references<br>
+          IEEE Computer Society · Technology &amp; Engineering Management Society · Power &amp; Energy Society<br>
+          <strong>BCS Professional Member</strong> (MBCS #995178976)<br>
+          BCS Chartered IT Professional (CITP) — application in review<br>
+          <strong>Hackathon Raptors Fellow</strong> (#15740) — peer-elected, 85+ countries
+        </p>
       </div>
 
       <div class="community-card">
@@ -664,20 +901,46 @@
           </svg>
         </div>
         <h3>Peer review &amp; judging</h3>
-        <p>Engagements with collegiate and professional hackathon programs across the U.S. (in progress).</p>
+        <p>
+          <strong>Elsevier</strong> — Reviewer, <em>Data in Brief</em> (invited by editor)<br>
+          <strong>IEEE InC4 2026</strong> — Paper reviewer (IEEE Conference #70839)<br>
+          <strong>IEEE CEEE 2026</strong> — Paper reviewer (IEEE Conference #71904)<br>
+          <strong>Springer SCIS 2026</strong> — External reviewer (LNNS series)<br>
+          <strong>IEEE Senior Member Reference Evaluator</strong> — evaluating SM candidates from the USA, India, and Serbia<br>
+          <strong>USAII Global AI Hackathon 2026</strong> — Mentor<br>
+          <strong>Ventura Challenge 2026</strong> — Judge
+        </p>
       </div>
 
       <div class="community-card">
         <div class="icon" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
-            <circle cx="9" cy="7" r="4"/>
-            <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
-            <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+            <path d="M12 2 4 5.5V11c0 5 3.4 8.7 8 10 4.6-1.3 8-5 8-10V5.5z"/>
+            <path d="m9 11.8 2.1 2.2L15 10"/>
           </svg>
         </div>
-        <h3>Mentorship</h3>
-        <p>Architecture-review and onboarding mentor for early-career engineers across previous and current teams.</p>
+        <h3>Patents</h3>
+        <p>
+          <strong>US Patent No. 9,026,257</strong> — Hydropower Generation Facility Optimization (Avista Corporation)<br>
+          <strong>US Patent No. 10,316,833</strong> — Hydroelectric Power Optimization (Avista Corporation)<br>
+          Engineering contributions to the Avista Decision Support System (ADSS) — a patented real-time energy optimization platform serving 815,000+ utility customers
+        </p>
+      </div>
+
+      <div class="community-card">
+        <div class="icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7l-1.7 1.7"/>
+            <path d="M14 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7 7l1.7-1.7"/>
+          </svg>
+        </div>
+        <h3>Academic profiles</h3>
+        <p>ORCID iD 0009-0007-1103-2103</p>
+        <div class="cta-row" style="margin-top: 18px;">
+          <a class="btn btn-ghost" href="https://orcid.org/0009-0007-1103-2103">ORCID ↗</a>
+          <a class="btn btn-ghost" href="https://scholar.google.com/citations?user=jAQjwnoAAAAJ">Google Scholar ↗</a>
+          <a class="btn btn-ghost" href="https://github.com/abhisheksharma2411">GitHub ↗</a>
+        </div>
       </div>
 
     </div>
@@ -686,7 +949,7 @@
   <!-- ===================== CONTACT ===================== -->
   <section id="contact">
     <div class="contact-block">
-      <div class="eyebrow">§ 05 — Get in touch</div>
+      <div class="eyebrow">§ 06 — Get in touch</div>
       <h2>Let's <span class="grad">build something resilient</span>.</h2>
       <p>Available for advisory engagements, speaking invitations, and conversations about distributed systems, resilience engineering, and commerce at scale.</p>
 
@@ -698,7 +961,9 @@
       <div class="contact-meta">
         <span>Based in Seattle · Tacoma · Bellevue, WA</span>
         <a href="https://medium.com/@abhicse24">Medium ↗</a>
-        <a href="https://github.com/abhisheksharma24">GitHub ↗</a>
+        <a href="https://github.com/abhisheksharma2411">GitHub ↗</a>
+        <a href="https://orcid.org/0009-0007-1103-2103">ORCID ↗</a>
+        <a href="https://scholar.google.com/citations?user=jAQjwnoAAAAJ">Google Scholar ↗</a>
       </div>
     </div>
   </section>
@@ -710,6 +975,7 @@
       <a href="#writing">Writing</a>
       <a href="#opensource">Open Source</a>
       <a href="#experience">Experience</a>
+      <a href="#publications">Publications</a>
       <a href="#contact">Contact</a>
     </div>
     <span>Last updated 2026</span>
